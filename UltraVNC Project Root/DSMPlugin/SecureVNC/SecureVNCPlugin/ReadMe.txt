@@ -34,10 +34,3 @@
 //                          - http://sourceforge.net/projects/securevncplugin/
 //                          - mailto:adam.walling@gmail.com
 ////////////////////////////////////////////////////////////////////////////
-
-
-This project assumes the environment variable OPENSSLPATH is set to the main directory which includes the OpenSSL build. The include files should exist in %OPENSSLPATH%\inc32 and the static library should exist in %OPENSSLPATH%\out32.
-
-For compatibility and distribution reasons, the SecureVNC plugin is built statically linked with the Visual C++ Runtime. This is by no means a requirement and can be changed to suit your purposes.
-
-This project was last compiled using OpenSSL 0.9.8o with OPENSSLPATH set to c:\openssl-0.9.8o
