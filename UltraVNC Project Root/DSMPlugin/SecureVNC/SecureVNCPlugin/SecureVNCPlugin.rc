@@ -1,0 +1,126 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "windows.h"
+#define IDC_STATIC (-1)
+#include "version.h"
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "#include ""version.h""\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r#include ""SecureVNCPlugin.rc2""  // non-Microsoft Visual C++ edited resource\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CONFIG_DLG DIALOGEX 0, 0, 369, 249
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "SecureVNCPlugin Configuration"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Static",IDC_TITLE,7,7,355,22
+    LTEXT           "Static",IDC_SUBTITLE,7,31,355,12
+    LTEXT           "Static",IDC_INFO,7,54,355,33
+    GROUPBOX        "Enabled Ciphers",IDC_GROUP_CIPHERS,7,91,132,104
+    CONTROL         "3AES-CFB (128- to 256-bit keys)",IDC_CHECK_3AES,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,103,118,10
+    CONTROL         "AES-CFB (128- to 256-bit keys)",IDC_CHECK_AESCFB,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,115,112,10
+    CONTROL         "AES (128- to 256-bit keys)",IDC_CHECK_AES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,127,112,10
+    CONTROL         "Blowfish (56- to 448-bit keys)",IDC_CHECK_BF,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,139,112,10
+    CONTROL         "IDEA (128-bit keys)",IDC_CHECK_IDEA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,151,112,10
+    CONTROL         "CAST5 (56- to 128-bit keys)",IDC_CHECK_CAST5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,163,112,10
+    CONTROL         "ARC4 (56- to 256-bit keys)",IDC_CHECK_ARC4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,175,112,10
+    GROUPBOX        "Enabled Key Lengths",IDC_GROUP_KEYLENGTH,142,91,85,83
+    CONTROL         "448-bit",IDC_CHECK_448,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,150,103,39,10
+    CONTROL         "256-bit",IDC_CHECK_256,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,150,113,39,10
+    CONTROL         "192-bit",IDC_CHECK_192,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,150,124,39,10
+    CONTROL         "128-bit",IDC_CHECK_128,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,150,135,39,10
+    CONTROL         "56-bit",IDC_CHECK_56,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,150,146,39,10
+    LTEXT           "RSA:",IDC_STATIC,150,160,17,8
+    COMBOBOX        IDC_COMBO_RSA,169,158,49,57,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Passphrase:",IDC_STATIC_PASSPHRASE,7,201,47,8
+    EDITTEXT        IDC_EDIT_PASSPHRASE,58,199,169,14,ES_PASSWORD | ES_AUTOHSCROLL
+    RTEXT           "Confirm:",IDC_STATIC_CONFIRM,7,217,47,8
+    EDITTEXT        IDC_EDIT_CONFIRM,58,215,169,14,ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "Generate Client &Authentication Key",IDC_GENERATE_VIEWER_KEY,237,94,125,14
+    PUSHBUTTON      "&Generate Server Key (advanced)",IDC_GENERATE_KEY,237,113,125,14
+    CONTROL         "Use new key algorithm",IDC_CHECK_NEW_KEY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,232,160,93,10
+    PUSHBUTTON      "&Website",IDC_WEBSITE,299,200,63,14
+    DEFPUSHBUTTON   "Close",IDCANCEL,299,219,63,14
+    CONTROL         "Use 56-bit Blowfish cipher for passphrase",IDC_CHECK_LOW_KEY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,58,232,169,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_CONFIG_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 362
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 242
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+#include "SecureVNCPlugin.rc2"  // non-Microsoft Visual C++ edited resource
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
